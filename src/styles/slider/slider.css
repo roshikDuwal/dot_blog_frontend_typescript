@@ -1,0 +1,75 @@
+.row-item {
+  outline: 2px solid rgba(0, 0, 0, 0.205);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.row-item:hover {
+  outline: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.item-header img {
+  width: 21rem;
+}
+
+.item-description {
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.row-container {
+  display: flex;
+  gap: 2.2rem;
+  overflow-x: scroll;
+  padding-top: 10px;
+  padding-bottom: 10px;
+   overflow-y: hidden;
+  scroll-behavior: smooth;  
+
+ 
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row-container::-webkit-scrollbar {
+  display: none;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.title-btns {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.btns button {
+  color: white;
+  background-color: #373737;
+  padding: 0.2rem;
+  font-size: 1rem;
+  border: none;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.btns {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btns button:hover {
+  background-color: black;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
