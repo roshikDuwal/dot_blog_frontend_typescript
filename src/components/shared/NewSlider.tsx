@@ -32,7 +32,7 @@ export default function NewSlider({ sliderData }: SliderDataProps) {
   
   return (
     <>
-      <div className="lg:w-2/3 md:w-1/2 sm:w-full sm:mb-2 md:mt-0 mt-12 ">
+      <div className="lg:w-2/3 md:w-1/2 sm:w-full sm:mb-2 md:mt-0 mt-12  ">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -55,9 +55,11 @@ export default function NewSlider({ sliderData }: SliderDataProps) {
             >
               <Link
                 to={`${elem.url}`}
+                target="_blank"
                 style={{
                   width: "100%",
                 }}
+                rel="noopener noreferrer"
               >
                 <img
                   src={`${Base_Url}/uploads/sliders/${elem.image}`}

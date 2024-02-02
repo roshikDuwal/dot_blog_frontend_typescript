@@ -73,7 +73,7 @@ const Slider = ({ type, getLatestData, getFeatureInfoData }: SliderProps) => {
   return (
     <>
       <section>
-        <div className=" relative py-1 ">
+        <div className={`relative py-1 ${type==="latestnews"?" h-[8rem]  mb-4":null} `}>
           {type === "latestnews" ? (
             <>
               <button
